@@ -9,17 +9,52 @@
         android:id="@+id/nav_home"
         android:name="com.example.busic.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_bookListFragment"
+            app:destination="@id/bookListFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_bukuListFragment"
+            app:destination="@id/bukuListFragment" />
+    </fragment>
+
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.busic.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/bookListFragment"
+        android:name="com.example.busic.ui.book.BookListFragment"
+        android:label="@string/menu_book"
+        tools:layout="@layout/fragment_book_list">
+        <action
+            android:id="@+id/action_bookListFragment_to_bookDetailFragment"
+            app:destination="@id/bookDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDetailFragment"
+        android:name="com.example.busic.ui.book.BookDetailFragment"
+        android:label="BookDetailFragment"
+        tools:layout="@layout/fragment_book_detail">
+        <action
+            android:id="@+id/action_bookDetailFragment_to_bookListFragment"
+            app:destination="@id/bookListFragment" />
+    </fragment>
+
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.busic.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/bukuListFragment"
+        android:name="com.example.busic.ui.buku.BukuListFragment"
+        android:label="BukuListFragment"
+        tools:layout="@layout/fragment_buku_list">
+        <action
+            android:id="@+id/action_bukuListFragment_to_bukuDetailFragment"
+            app:destination="@id/bukuDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bukuDetailFragment"
+        android:name="com.example.busic.ui.buku.BukuDetailFragment"
+        android:label="BukuDetailFragment"
+        tools:layout="@layout/fragment_buku_detail">
+        <action
+            android:id="@+id/action_bukuDetailFragment_to_bukuListFragment"
+            app:destination="@id/bukuListFragment" />
+    </fragment>
 </navigation>
