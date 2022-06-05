@@ -12,7 +12,7 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <TextView
-        android:layout_width="381dp"
+        android:layout_width="229dp"
         android:layout_height="wrap_content"
         android:background="#7AA455FD"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
@@ -23,7 +23,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="381dp"
+        android:layout_width="229dp"
         android:layout_height="wrap_content"
         android:background="#7AA455FD"
         android:text="2010817110005"
@@ -31,7 +31,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:layout_width="381dp"
+        android:layout_width="229dp"
         android:layout_height="wrap_content"
         android:background="#7AA455FD"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
@@ -42,7 +42,7 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="381dp"
+        android:layout_width="229dp"
         android:layout_height="wrap_content"
         android:background="#7AA455FD"
         android:text="2010817210011"
