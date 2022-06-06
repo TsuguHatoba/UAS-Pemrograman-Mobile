@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.busic.R
 import com.example.busic.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -28,11 +30,28 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
+        val textView: TextView = binding.namaf
         homeViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.button1.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_home_to_bookListFragment)
+        }
+        binding.imageButton1.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_home_to_bookListFragment)
+        }
+        binding.button2.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_home_to_bukuListFragment)
+        }
+        binding.imageButton2.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_home_to_bukuListFragment)
+        }
     }
 
     override fun onDestroyView() {
