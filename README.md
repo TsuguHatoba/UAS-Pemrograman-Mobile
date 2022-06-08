@@ -21,4 +21,10 @@
 - ViewModel LiveData
 - Material Design
 
-## Cross Check Done
+## API
+#BASE_URL
+https://hp-api.herokuapp.com/
+#Student
+http://hp-api.herokuapp.com/api/characters/students
+#Staff
+http://hp-api.herokuapp.com/api/caracters/staff
