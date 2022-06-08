@@ -22,9 +22,9 @@
 - Material Design
 
 ## API
-#BASE_URL
+- BASE_URL
 https://hp-api.herokuapp.com/
-#Student
+- Student
 http://hp-api.herokuapp.com/api/characters/students
-#Staff
+- Staff
 http://hp-api.herokuapp.com/api/caracters/staff
